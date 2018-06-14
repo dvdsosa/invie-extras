@@ -1,0 +1,35 @@
+body {
+  background: lightgray;
+  min-height: 100vh; /* viewport - heigth viewport - width */
+  margin: 0;
+  /*display: flex;
+  flex-direction: column;*/
+}
+
+h2 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+header {
+  /* height: 50px; */
+  background: #273b47;
+}
+
+section {
+  background: #fcfcd2;
+  /*flex: 1;
+  /* min-height: 450px; */
+}
+
+footer {
+  background: #7fc719;
+  /*height: 100px;
+  /*position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%; */
+}

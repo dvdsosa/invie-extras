@@ -1,0 +1,1068 @@
+/* CUERPO */
+
+body{
+  margin: 0;
+  background: rgba(179,220,237,1);
+}
+
+/* FONDO CVANDERLAND */
+
+.container{
+  width: 100vw;
+  min-height: 632px;
+  position: relative;
+}
+
+.cvanderland{
+  position: relative;
+  background-image: url('../img/fondo.png');
+  width: 1024px;
+  height: 100vh;
+  bottom: 0;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+/* HOMBRE ARCOIRIS */
+
+.hombre-arcoiris{
+  position: absolute;
+  -webkit-transform: translate(200px);
+          transform: translate(200px);
+  top: 240px;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+  -webkit-animation-name: movimiento-hombre-arcoiris;
+          animation-name: movimiento-hombre-arcoiris;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+@-webkit-keyframes movimiento-hombre-arcoiris {
+  0{
+    opacity: 1;
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+  }
+  10%{
+    -webkit-transform: translateX(625px);
+            transform: translateX(625px);
+    opacity: 1;
+  }
+  20%{
+    -webkit-transform: translateX(625px) rotate(180deg);
+            transform: translateX(625px) rotate(180deg);
+    opacity: 1;
+  }
+  30%{
+    -webkit-transform: translateX(150px) rotate(180deg);
+            transform: translateX(150px) rotate(180deg);
+    opacity: 1;
+  }
+  40%{
+    -webkit-transform: translateX(150px) rotate(0);
+            transform: translateX(150px) rotate(0);
+    opacity: 1;
+  }
+  50%{
+    -webkit-transform: translateX(625px);
+            transform: translateX(625px);
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+    -webkit-transform: translateX(625px) rotate(0);
+            transform: translateX(625px) rotate(0);
+  }
+}
+
+@keyframes movimiento-hombre-arcoiris {
+  0{
+    opacity: 1;
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+  }
+  10%{
+    -webkit-transform: translateX(625px);
+            transform: translateX(625px);
+    opacity: 1;
+  }
+  20%{
+    -webkit-transform: translateX(625px) rotate(180deg);
+            transform: translateX(625px) rotate(180deg);
+    opacity: 1;
+  }
+  30%{
+    -webkit-transform: translateX(150px) rotate(180deg);
+            transform: translateX(150px) rotate(180deg);
+    opacity: 1;
+  }
+  40%{
+    -webkit-transform: translateX(150px) rotate(0);
+            transform: translateX(150px) rotate(0);
+    opacity: 1;
+  }
+  50%{
+    -webkit-transform: translateX(625px);
+            transform: translateX(625px);
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+    -webkit-transform: translateX(625px) rotate(0);
+            transform: translateX(625px) rotate(0);
+  }
+}
+
+/* ANGRY BIRD */
+
+.angry-bird{
+  position: absolute;
+  top: 40px;
+  left: 25%;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+  -webkit-animation-name: movimiento-angry-bird;
+          animation-name: movimiento-angry-bird;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+/* CUERPO CVANDER MUSIC */
+
+.cvander-music{
+  cursor: pointer;
+  position: absolute;
+  width: 166px;
+  height: 171px;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.cabeza-cvander-music{
+  position: absolute;
+}
+
+.cvander-music:hover .cabeza-cvander-music{
+  -webkit-animation: .6s moviendo-cabeza-cvander-music infinite;
+          animation: .6s moviendo-cabeza-cvander-music infinite;
+}
+
+@-webkit-keyframes moviendo-cabeza-cvander-music {
+  0%{
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50%{
+    -webkit-transform: translateY(8px) rotate(2deg);
+            transform: translateY(8px) rotate(2deg);
+  }
+  100%{
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes moviendo-cabeza-cvander-music {
+  0%{
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50%{
+    -webkit-transform: translateY(8px) rotate(2deg);
+            transform: translateY(8px) rotate(2deg);
+  }
+  100%{
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.cuerpo-cvander-music{
+  position: absolute;
+  -webkit-transform: rotate(0) translateY(0);
+          transform: rotate(0) translateY(0);
+  -webkit-transition: .5s;
+          transition: .5s;
+}
+
+.cvander-music:hover .cuerpo-cvander-music{
+  -webkit-transform: rotate(2deg) translateY(5px);
+          transform: rotate(2deg) translateY(5px);
+  -webkit-transition: .5s;
+          transition: .5s;
+}
+
+.mano-cvander-music{
+  position: absolute;
+  bottom: -10px;
+  -webkit-transition: .3s;
+          transition: .3s;
+}
+
+.cvander-music:hover .mano-cvander-music{
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+}
+
+/* CALCOMANIAS DE LA TABLET DE CVANDER */
+
+.calcomania-1{
+    position: absolute;
+    top: 102px;
+    left: 34px;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transition: .3s;
+            transition: .3s;
+}
+
+.calcomania-1:hover{
+  -webkit-transition: .3s;
+          transition: .3s;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+.calcomania-2{
+  position: absolute;
+  bottom: 36px;
+  left: 8px;
+  -webkit-transition: .3s;
+          transition: .3s;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.calcomania-2:hover{
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: .3s;
+          transition: .3s;
+}
+
+.calcomania-3{
+  position: absolute;
+  bottom: 8px;
+  left: 44px;
+  -webkit-transition: .3s;
+          transition: .3s;
+  -webkit-transform: scale(1) translate(0);
+          transform: scale(1) translate(0);
+}
+
+.calcomania-3:hover{
+  -webkit-transform: scale(1.2) translate(-5px);
+          transform: scale(1.2) translate(-5px);
+  -webkit-transition: .3s;
+          transition: .3s;
+}
+
+/* GOOGLE */
+
+.google{
+  cursor: pointer;
+  position: absolute;
+  left: 296px;
+  bottom: 98px;
+  -webkit-transition: .5s;
+          transition: .5s;
+  -webkit-transform: scale(1) translate(0);
+          transform: scale(1) translate(0);
+}
+
+.google:hover{
+  -webkit-transform: scale(1.2) translate(5px);
+          transform: scale(1.2) translate(5px);
+  -webkit-transition: .5s;
+          transition: .5s;
+}
+
+/* AVE */
+
+.ave{
+  width: 25px;
+  position: absolute;
+  left: 0;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+  -webkit-animation-name: movimiento-ave;
+          animation-name: movimiento-ave;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes movimiento-ave {
+  0%{
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50%{
+    -webkit-transform: translate(350px, 350px);
+            transform: translate(350px, 350px);
+  }
+  51%{
+    -webkit-transform: translate(350px, 350px) rotate(-20deg);
+            transform: translate(350px, 350px)rotate(-20deg);
+  }
+  80%{
+    -webkit-transform: translate(350px, 350px) rotate(0);
+            transform: translate(350px, 350px)rotate(0);
+  }
+  100%{
+    width: 49px;
+    -webkit-transform: translate(825px, 368px);
+            transform: translate(825px, 368px);
+  }
+}
+
+@keyframes movimiento-ave {
+  0%{
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50%{
+    -webkit-transform: translate(350px, 350px);
+            transform: translate(350px, 350px);
+  }
+  51%{
+    -webkit-transform: translate(350px, 350px) rotate(-20deg);
+            transform: translate(350px, 350px)rotate(-20deg);
+  }
+  80%{
+    -webkit-transform: translate(350px, 350px) rotate(0);
+            transform: translate(350px, 350px)rotate(0);
+  }
+  100%{
+    width: 49px;
+    -webkit-transform: translate(825px, 368px);
+            transform: translate(825px, 368px);
+  }
+}
+
+/* BALLENA BLANCA */
+
+.ballena{
+  position: absolute;
+  right: 420px;
+  top: 0%;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+  -webkit-animation-name: movimiento-ballena;
+          animation-name: movimiento-ballena;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes movimiento-ballena {
+  0%{
+    top: -100%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  33.33%{
+    top: 23%;
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  66.66%{
+    top: 23%;
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  100%{
+    top: 68%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes movimiento-ballena {
+  0%{
+    top: -100%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  33.33%{
+    top: 23%;
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  66.66%{
+    top: 23%;
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  100%{
+    top: 68%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+/* ANDROID */
+
+.android{
+  cursor: pointer;
+  position: absolute;
+  left: 460px;
+  bottom: 0;
+  border: 0 solid transparent;
+  -webkit-transition: .5s;
+          transition: .5s;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+  -webkit-animation-name: movimiento-android;
+          animation-name: movimiento-android;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+.android:hover{
+  border-left: 6px solid #6BF11C;
+  -webkit-transition: .5s;
+          transition: .5s;
+}
+
+@-webkit-keyframes movimiento-android {
+  0%{
+    bottom: 0;
+  }
+  12.5%{
+    bottom: 50px;
+  }
+  25%{
+    bottom: 50px;
+  }
+  37.5%{
+    bottom: 50px;
+  }
+  50%{
+    bottom: 50px;
+  }
+  62.5%{
+    bottom: 0;
+  }
+  75%{
+    bottom: 0;
+  }
+  87.5%{
+    bottom: 0;
+  }
+  100%{
+    bottom: 0;
+  }
+}
+
+@keyframes movimiento-android {
+  0%{
+    bottom: 0;
+  }
+  12.5%{
+    bottom: 50px;
+  }
+  25%{
+    bottom: 50px;
+  }
+  37.5%{
+    bottom: 50px;
+  }
+  50%{
+    bottom: 50px;
+  }
+  62.5%{
+    bottom: 0;
+  }
+  75%{
+    bottom: 0;
+  }
+  87.5%{
+    bottom: 0;
+  }
+  100%{
+    bottom: 0;
+  }
+}
+
+/* EMOTICON */
+
+.emoticon{
+  cursor: pointer;
+  position: absolute;
+  left: 500px;
+  bottom: 10px;
+}
+
+.emoticon{
+  -webkit-transform: rotate(0) scale(1);
+          transform: rotate(0) scale(1);
+  -webkit-transition: .5s;
+          transition: .5s;
+}
+
+.emoticon:hover {
+  -webkit-transform: rotate(-10deg) scale(1.5);
+          transform: rotate(-10deg) scale(1.5);
+  -webkit-transition: .5s;
+          transition: .5s;
+}
+
+/* BANDERAS */
+
+.bandera-1{
+  position: absolute;
+  left: 358px;
+  bottom: 38px;
+}
+
+.bandera-2{
+  position: absolute;
+  left: 530px;
+  bottom: 32px;
+}
+
+.bandera-3{
+  position: absolute;
+  left: 613px;
+  bottom: 48px;
+}
+
+.bandera-4{
+  position: absolute;
+  left: 648px;
+  bottom: 0;
+}
+
+.bandera-5{
+  position: absolute;
+  left: 762px;
+  bottom: 72px;
+  z-index: 2;
+}
+
+.bandera-1, .bandera-2, .bandera-3, .bandera-4, .bandera-5{
+  cursor: pointer;
+  -webkit-transform: scale(1) translateY(0);
+          transform: scale(1) translateY(0);
+  -webkit-transition: .5s;
+          transition: .5s;
+}
+
+.bandera-1:hover, .bandera-2:hover, .bandera-3:hover, .bandera-4:hover, .bandera-5:hover {
+  -webkit-transform: scale(1.2) translateY(-10px);
+          transform: scale(1.2) translateY(-10px);
+  -webkit-transition: .5s;
+          transition: .5s;
+}
+
+/* LAPTOP */
+
+.laptop{
+  position: absolute;
+  left: 550px;
+  bottom: 34px;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-name: movimiento-laptp;
+          animation-name: movimiento-laptop;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+@-webkit-keyframes movimiento-laptop {
+  0%{
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  1%{
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  2%{
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  3%{
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100%{
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes movimiento-laptop {
+  0%{
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  1%{
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  2%{
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  3%{
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100%{
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+/* CARPETA Y MANZANA*/
+
+.carpeta{
+  position: absolute;
+  left: 726px;
+  bottom: 4px;
+}
+
+.manzana{
+  position: absolute;
+  left: 752px;
+  bottom: 10px;
+  z-index: 2;
+}
+
+.carpeta, .manzana{
+  cursor: pointer;
+  -webkit-transform: rotate(0) scale(1);
+          transform: rotate(0) scale(1);
+  -webkit-transition: .5s;
+          transition: .5s;
+}
+
+.carpeta:hover, .manzana:hover{
+  -webkit-transform: rotate(5deg) scale(1.3);
+          transform: rotate(5deg) scale(1.3);
+  -webkit-transition: .5s;
+          transition: .5s;
+}
+
+/* LOCALIZADOR */
+
+.localizador{
+  cursor: pointer;
+  position: absolute;
+  bottom: 72px;
+  right: 200px;
+  z-index: 2;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: .9s;
+          transition: .9s;
+}
+
+.localizador:hover{
+  -webkit-transform: scale(1.9);
+          transform: scale(1.9);
+  -webkit-transition: .9s;
+          transition: .9s;
+}
+
+/* PACMAN */
+
+.pacman{
+  cursor: pointer;
+  position: absolute;
+  left: 246px;
+  bottom: 8px;
+  border: 0 solid transparent;
+  -webkit-transition: .5s;
+          transition: .5s;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+  -webkit-animation-name: movimiento-pacman;
+          animation-name: movimiento-pacman;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+.pacman:hover{
+  border-right: 6px solid red;
+  -webkit-transition: .5s;
+          transition: .5s;
+}
+
+@-webkit-keyframes movimiento-pacman {
+  0%{
+    left:266px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  5%{
+    left:276px;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  10%{
+    left:286px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  15%{
+    left:296px;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  20%{
+    left:306px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  25%{
+    left:316px;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  30%{
+    left:326px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  35%{
+    left:336px;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  40%{
+    left:346px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  45%{
+    left:356px;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  50%{
+    left:366px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  55%{
+    left:376px;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  60%{
+    left:386px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100%{
+    left:266px;
+  }
+}
+
+@keyframes movimiento-pacman {
+  0%{
+    left:266px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  5%{
+    left:276px;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  10%{
+    left:286px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  15%{
+    left:296px;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  20%{
+    left:306px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  25%{
+    left:316px;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  30%{
+    left:326px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  35%{
+    left:336px;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  40%{
+    left:346px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  45%{
+    left:356px;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  50%{
+    left:366px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  55%{
+    left:376px;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  60%{
+    left:386px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100%{
+  left:266px;
+  }
+}
+
+/* CUERPO CVANDER SHEEF */
+
+.cvander-sheef{
+  width: 246px;
+  height: 226px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-transition: .3s;
+          transition: .3s;
+}
+
+.cuerpo-cvander-sheef{
+  -webkit-transform: rotate(0) translateY(0);
+          transform: rotate(0) translateY(0);
+  -webkit-transition: .5s;
+          transition: .5s;
+}
+
+.cvander-sheef:hover .cuerpo-cvander-sheef{
+  -webkit-transform: rotate(5deg) translateY(5px);
+          transform: rotate(5deg) translateY(5px);
+  -webkit-transition: .5s;
+          transition: .5s;
+}
+
+.mano1-cvander-sheef{
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: .5s;
+          transition: .5s;
+}
+
+.cvander-sheef:hover .mano1-cvander-sheef{
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+  -webkit-transition: .5s;
+          transition: .5s;
+}
+
+.mano2-cvander-sheef{
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: .5s;
+          transition: .5s;
+}
+
+.cvander-sheef:hover .mano2-cvander-sheef{
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  -webkit-transition: .5s;
+          transition: .5s;
+}
+
+/* LOGO CVANDER SHEEF */
+
+.logo-cvander-sheef{
+  position: absolute;
+  top: 78px;
+  left: 120px;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: movimiento-logo-sheef;
+          animation-name: movimiento-logo-sheef;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+
+@-webkit-keyframes movimiento-logo-sheef {
+  0%{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50%{
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  51%{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  52%{
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100%{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+@keyframes movimiento-logo-sheef {
+  0%{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50%{
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  51%{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  52%{
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100%{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/* CAMARA CVANDER SHEEF */
+
+.camara-cvander{
+  cursor: pointer;
+  position: absolute;
+  bottom: 76px;
+  right: 54px;
+  z-index: 2;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+.camara-cvander:hover{
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: movimiento-camara-sheef;
+          animation-name: movimiento-camara-sheef;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+@-webkit-keyframes movimiento-camara-sheef {
+    0%{
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    25%{
+      -webkit-transform: scale(1.8);
+            transform: scale(1.8);
+    }
+    50%{
+      -webkit-transform: rotate(20deg);
+              transform: rotate(20deg);
+    }
+    51{
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    52%{
+      -webkit-transform: scale(1.8);
+            transform: scale(1.8);
+    }
+    53%{
+      -webkit-transform: skew(10deg);
+              transform: skew(10deg);
+    }
+    54%{
+      -webkit-transform: skew(-10deg);
+              transform: skew(-10deg);
+    }
+    100%{
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+@keyframes movimiento-camara-sheef {
+    0%{
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    25%{
+      -webkit-transform: scale(1.8);
+            transform: scale(1.8);
+    }
+    50%{
+      -webkit-transform: rotate(20deg);
+              transform: rotate(20deg);
+    }
+    51{
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    52%{
+      -webkit-transform: scale(1.8);
+            transform: scale(1.8);
+    }
+    53%{
+      -webkit-transform: skew(10deg);
+              transform: skew(10deg);
+    }
+    54%{
+      -webkit-transform: skew(-10deg);
+              transform: skew(-10deg);
+    }
+    100%{
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
